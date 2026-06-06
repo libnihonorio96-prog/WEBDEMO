@@ -7,38 +7,181 @@
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
-    <h1 style="color: red;"><b>Mi primera página</b></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, veritatis.</p>
+    <script>
+
+        //-------------CLASE 2 DE JAVA --> switch (segun), se una con case y break para romper el bucle
+let pedido = "pizza"
+switch(pedido) {
+    // if (pedido es == "pizza") 
+    case "pizza": console.log("He pedido pizza"); break
+    // if (pedido es == "tacos")
+    case "tacos": console.log("He pedido tacos"); break
+    // if (pedido es == "sushi")
+    case "sushi": console.log("He pedido sushi"); break
+default: console.log("lo siento, lo que pides no esta en elmenu")
+
+}
+let hola = null
+console.log(hola)
+
+//for(), reparte uno por uno
+for(let plato = 1; plato <= 10; plato++){
+    console.log("he repartido el plato numero " + plato)
+    // numero + un texto, se concaneta, significa concatenacion
+}
+
+//Usando for, me gustsria ver numeros pares. Si usamos for(let i) la i es el nombre de la variable que se le asigna
+for(let i = 0; i <= 10; i+=2){
+    console.log("el numero es: " + i)
+}
+
+// ver los numeros del 1 al 5
+for(let i = 0; i <= 5; i+=1){
+    console.log("el numero es: " + i)
+}
+
+// se necesita tener los numeros divisibles entre 5
+for(let i = 1; i <=50; i++){
+    if(i % 5 == 0){
+        console.log(i)
+    }
+}
+let hambre = true
+let piezas = 0
+
+while(hambre){
+    piezas ++
+    console.log("comi la pieza numero" + piezas)
+    
+    if (piezas == 4) {
+        hambre=false
+        }
+    }
+
+    
+    
+ </script>
+ <!-- clase 3 de java SCRIPT - FOR -->
+ <script>
+    for(let name = 1; name <= 50; name++){
+    console.log("nombre" + name)
+    }
+
+    for(let i = 1 ; i<=100; i++){
+        if(i%7==0){
+            console.log(i)
+        }
+    }
+
+    let capitalInicial = 1000;
+    let interesPorAno = 50;
+    for(let ano = 1; ano <= 8; ano++){
+        let capitalTotal = capitalInicial + (interesPorAno * ano);
+        console.log("Año" + ano + ":" + capitalTotal + "soles");
+    }
+
+    let a = 0
+    let b = 1
+    for(let  i = 1; i <= 10; i++){
+        let siguienteNumero = a + b
+        console.log(siguienteNumero)
+    } 
+
+let dinero = 500
+let dia = 1
+while(dinero >= 35){
+    dinero -= 35
+    console.log("Me queda " + dinero + " y es el día " + dia)
+    dia++  
+    }
+ </script>
+ <script>
+
+
+let suma = 0
+for(let i = 1; i <= 10; i+=1){
+    console.log(i)    
+    suma = suma + i
+ }
+    console.log("total es " + suma)
+
+
+let numero = 7
+for (let i = 1; i <= 10; i++){
+    let resultado = numero * i
+    console.log(numero + " x " + i + " = " + resultado)
+}
+
+ </script>
+
+ <script>
+    function areaTriangulo(base, altura){
+   console.log((base * altura) / 2)
+    }
+    areaTriangulo(9,25)
+    areaTriangulo(10,5)
+    areaTriangulo(20,100)
+    areaTriangulo(5,7)
+
+
+
+
+    function verificarIngreso(edad){
+        if(edad >= 18){
+            console.log("Puedes Ingresar")
+        } else {
+            console.log("No puedo ingresar, eres menor aún")
+        }
+        }
+        verificarIngreso(19)
+        verificarIngreso(15)
+
+
+
+
+function precioFinal(precioBase, dscto){
+console.log((precioBase * dscto))
+}
+precioFinal(120,0.9)
+
+
+
+
+function calcularPrecio(precioBase, descuento){
+    const precioFinal = precioBase - (precioBase * descuento / 100)
+    const ahorro = precioBase - precioFinal
+
+    console.log("El precio final es: "+ precioFinal)
+    console.log("El ahorro es: " + ahorro)
+}
+
+calcularPrecio(120,10)
+
+function calculadoraBasica(num1, num2, operador){
+    if(operador == '+') console.log(num1 + num2)
+ else if(operador == '-') console.log(num1 - num2)
+else if(operador == '*') console.log(num1 * num2)
+else if(operador == '/') {
+    if(num2 == 0) {
+        console.log("No puedes dividir entre 0")
+    }
+}
+else {
+    console.log("Operación Inválida")
+}
+}
+calculadoraBasica(20,0,'/')
+
+
+ </script>
+
 </body>
 </html>
-<!--
-
-con CRTL + ñ, se apertura el cuadro para ingresar los comandos. para cuando se a creado un nuevo repositorio, ejecutar los siguientes comandos
- …or create a new repository on the command line
-echo "# WEBDEMO" >> README.md
-git init
-git add . // README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/libnihonorio96-prog/WEBDEMO.git
-git push -u origin main
-
-cuando ya se tiene el repositorio creado,
-
-git add.
-git commit -m "comentario"
-git push
+   <!-- LA SERIE DE FIBONACCI
+    1123581321 -->
 
 
-…or push an existing repository from the command line
-git remote add origin https://github.com/libnihonorio96-prog/WEBDEMO.git
-git branch -M main
-git push -u origin main-->
-
-<!-- para regresar
- git resert --hard (copiasr el codigo) y enter
- git commi -m "la edicion quehice"
- git push
- 
- viaja a la anterieo y borra el anterior, si es -soft (vuelves a la anterior pero sin perder los cambios)
- 
- -->
+    
+    
+   
